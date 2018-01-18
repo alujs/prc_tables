@@ -1,0 +1,232 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+html{
+  height: 100vh;
+}
+body{
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.body-inner-wrapper {
+  max-height: 20%;
+}
+
+.primary-container {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  height: 100vh;
+}
+
+.header-wrapper {
+  display: flex;
+  height: 2em;
+  font-size: 20px;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: steelblue;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.header-inner-wrapper {
+  width: 100%
+}
+
+.responsive-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-logo {
+  height: 7%;
+  /* background-color: #4e7ca2; */
+  color: white;
+  font-weight: bold;
+  line-height: 2em;
+  font-size: 20px;
+  margin-left: 20px;
+  z-index: 22;
+}
+.body-wrapper {
+  width: 95%;
+  height: 90vh;
+  /* padding: 0em; */
+  padding-left: 4em;
+  padding-top: 2em;
+}
+
+.row-wrapper {
+  width: 100%;
+  background-color: #F0F0F0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+.nav-container {
+  height: 100%;
+  width: 9em;
+  font-size: 20px;
+  background-color: currentColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  width: 100%;
+  background-color: white;
+  height: 70px;
+}
+
+.nav-menu-custom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav-logo {
+  height: 2em;
+  background-color:#4e7ca2;
+  color: white;
+  font-weight: bold;
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.nav-text-to-icon {
+  display: inherit;
+}
+
+.nav-component-wrapper {
+  height: 100%
+}
+
+.nav-minimized-icon {
+  display: none
+}
+
+.nav-recommendation-actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1em;
+  font-size: 12px;
+}
+
+.stuff-gets-small {
+  position: fixed;
+  left: 9%;
+  width: 10%;
+  background-color: #211616;
+  z-index: 100;
+  padding-left: 2%;
+}
+
+.nav-radio-option {
+  color: white;
+  display: flex;
+}
+
+.nav-selection {
+  color: white;
+  font-size: 12px;
+  height: 4em;
+  line-height: 4em;
+  background-color: #21161685;
+  padding-left: 1em;
+  display: flex;
+}
+
+.nav-menu-icons {
+  line-height: 4em;
+  font-size: 12px;
+  /* margin: 0em; */
+  /* padding-left: 1px; */
+  margin-right: 4%;
+}
+
+.nav-selected {
+  color: white;
+  display: flex;
+  font-size: 15px;
+  margin-left: 8%;
+  line-height: 3em;
+}
+
+.nav-popout {
+  display: flex;
+}
+
+.nav-minimized-icon {
+  display: none;
+}
+
+@media only screen and (max-height : 630px) {
+  .footer-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .nav-text-to-icon {
+    display: none;
+  }
+
+  .nav-recommendation-actions {
+    position: fixed;
+    top: 8em;
+    background-color: slategrey;
+    width: 11.9em;
+    left: 3.48em;
+    font-size: 11px;
+    margin-left: 1px;
+    z-index: 3;
+  }
+
+  .nav-minimized-icon  {
+    display: flex;
+    line-height: 2em;
+    padding-left: .5em;
+  }
+
+  .nav-container {
+    height: 100%;
+    width: 2em;
+    font-size: 20px;
+    background-color: currentColor;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .nav-popout {
+    position: fixed;
+    background-color: #3a3434;
+    z-index: 5;
+    left: 3.2em;
+    font-size: 12px;
+    height: 4em;
+    width: 11em;
+    display: flex;
+  }
+  
+}

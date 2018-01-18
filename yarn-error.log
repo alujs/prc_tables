@@ -1,0 +1,77 @@
+Arguments: 
+  /home/steinernein/.nvm/versions/node/v6.10.2/bin/node /usr/local/bin/yarn add rxjs
+
+PATH: 
+  /home/steinernein/.nvm/versions/node/v6.10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/ProgramData/Oracle/Java/javapath_target_465475640:/mnt/c/Program Files (x86)/Intel/iCLS Client:/mnt/c/Program Files/Intel/iCLS Client:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files/Intel/WiFi/bin:/mnt/c/Program Files/Common Files/Intel/WirelessCommon:/mnt/c/Program Files (x86)/Skype/Phone:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Amazon/AWSCLI:/mnt/c/Program Files (x86)/Microsoft VS Code/bin:/mnt/c/Users/steinernein/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/steinernein/AppData/Roaming/npm
+
+Yarn version: 
+  0.22.0
+
+Node version: 
+  6.10.2
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "prorize-challenge",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build --prod",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "^5.1.0",
+      "@angular/common": "^5.1.0",
+      "@angular/compiler": "^5.1.0",
+      "@angular/core": "^5.1.0",
+      "@angular/forms": "^5.1.0",
+      "@angular/http": "^5.1.0",
+      "@angular/platform-browser": "^5.1.0",
+      "@angular/platform-browser-dynamic": "^5.1.0",
+      "@angular/router": "^5.1.0",
+      "core-js": "^2.4.1",
+      "rxjs": "^5.5.2",
+      "zone.js": "^0.8.19"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.6.4",
+      "@angular/compiler-cli": "^5.1.0",
+      "@angular/language-service": "^5.1.0",
+      "@types/jasmine": "~2.8.3",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "codelyzer": "^4.0.1",
+      "jasmine-core": "~2.8.0",
+      "jasmine-spec-reporter": "~4.2.1",
+      "karma": "~2.0.0",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-cli": "~1.0.1",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.1.2",
+      "ts-node": "~3.2.0",
+      "tslint": "~5.9.1",
+      "typescript": "~2.5.3"
+    },
+    "main": "index.js",
+    "author": "steinernein <steinernein@gmail.com>"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/home/steinernein/.cache/yarn/v1/npm-tsickle-0.26.0-40b30a2dd6abcb33b182e37596674bd1cfe4039c/src/class_decorator_downlevel_transformer.d.ts'
+      at Error (native)

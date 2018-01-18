@@ -1,0 +1,206 @@
+﻿/*--------------------------------------------------------------Unit Type Scroller CSS------------------------------------------------------------*/
+/*--------------------------------------------------------------Unit Type Scroller CSS------------------------------------------------------------*/
+/*#SStableWrap .col-lg-1 {
+    margin-top:87px;
+}*/
+
+.filter-active {
+  background-color: #eeeeee
+}
+
+.modal-front { 
+  z-index: 2
+}
+
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+  opacity: .5;
+  z-index: 1
+}
+
+.switchbtnSx{
+   height:32px !important;
+   border: 1px #ddd solid !important;
+   margin: 0;
+   padding: 0;
+}
+
+#saveRecDetails2 {
+   height:32px !important;
+   margin: 0;
+   padding: 0;
+}
+
+#BtnGroupSx {
+   width: 100% !important;
+   margin: 0;
+   padding: 0;
+}
+
+.list-group-item i.hide {
+    display:none !important;
+}
+
+#tableRecDetails1 tr.parentrow	{ background-color:#eee; }
+
+.list-group-root {
+    /*padding-top: 5em;*/
+    font-size: 1em;
+}
+.list-group * {
+    margin: 0;
+    padding: 0;
+    border-width: 1px 1px 0px 1px;
+    border-color: #ddd;
+    border-radius:4px !important;
+}
+
+a.UT_List_Items:last-child {
+border-bottom: 1px #ddd solid !important;
+} 
+
+.list-group-item {
+    height: 39px;/*3.2em;*/
+}
+.list-group-item span {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+.list-group-item i {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #ddd;
+    display: block;
+    float: left;
+    height: 100%;
+    padding-top: 1em;
+    width: 2em;
+}
+a.list-group-item:hover {
+    border-width: 1px 1px 0 1px;
+    border-color: #ddd;
+    padding-left: 0;
+    margin-left: 0;
+}
+.active-arrow-down {
+    border-width: 1px 1px 0 1px;
+    border-color: #ddd;
+    background-color: #ddd;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/*.test-white {
+    color: #fff;
+}*/
+/*
+.text-white {       
+    color:#FFFFFF !important;
+    /*background-color: #555555;*-/
+    }
+    .text-white:visited {       
+    color:#272930 !important;
+    background-color:#FFFFFF;
+    }
+
+    .text-white:hover {       
+    color:#272930 !important;
+    }*/
+ 
+/*------------------------------------------------------------------DataTable CSS---------------------------------------------------------------------*/
+    table.dataTable
+    {
+        border-collapse: collapse;
+    }
+
+    table.dataTable thead th, table.dataTable thead td {
+        padding: 10px 4px;
+        border-bottom: 0px solid #dddddd !important;
+    }
+
+        table.dataTable tbody td {
+            padding: 10px 4px;
+        }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.selectorP, .selectorU {
+    color:#3a87ad;
+}
+
+    .selectorP:hover, .selectorU:hover {
+        cursor:pointer;
+    }
+
+.marginRight10px {
+margin-right: 10px !important;
+}
+/*------------------------------------------------------------------CSS from OTHERS----------------------------------------------------------------*/
+/*[SLRO VERSION]
+#SStableWrap .col-lg-11	{ padding-right:5px; }
+#SStableWrap .col-lg-1	{ padding:5px 30px 5px 0px; border-left:2px solid #bbb; margin-top:85px;}
+#SStableWrap .col-lg-1 .list-group a		{ position:relative; height:50px; background:#eee;}
+#SStableWrap .col-lg-1 .list-group a:before	{ display:block; content:''; width:0px; height:0px; background:#eee; position:absolute; right:0px; top:0px; border-top: 25px solid transparent; border-bottom: 25px solid transparent; border-right: 25px solid #fff; }
+ 
+#SStableWrap .col-lg-1 .list-group:hover i	{ color:#333; }
+#SStableWrap .col-lg-1 .list-group i:hover	{ color:#000; }
+.dataTables_wrapper.no-footer .dataTables_scrollBody	{ border:1px;}		
+div.DTS div.dataTables_scrollBody	{ background:none; }
+#tableRecDetails1	{ padding-bottom:5px; }
+.border1px {
+    border-radius:2px;
+border: 1px solid;
+}
+*/
+
+/*[SSRO VERSION]
+#SStableWrap .col-lg-11	{ padding-right:5px; }
+#SStableWrap .col-lg-1	{ padding:5px 30px 5px 0px; border-left:2px solid #bbb; margin-top:87px;}
+#SStableWrap .col-lg-1 .list-group a		{ position:relative; height:30px; margin:0px 0px 1px 0px; background:#eee; padding: 0px 15px; box-shadow: 0px 1px 1px 0px red; line-height:30px; }
+#SStableWrap .col-lg-1 .list-group a:before	{ display:block; content:''; width:0px; height:0px; background:#eee; position:absolute; right:0px; top:0px; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-right: 15px solid #fff;  }
+
+#SStableWrap a.list-group-item:hover + a.list-group-item { border-top-color:#dddddd; }
+#SStableWrap .list-group.list-group-root > .list-group-item:first-child {border-top-width: 1px;}
+
+#SStableWrap .col-lg-1 .list-group i	{ background:#fff;
+                                          font-size:16px;
+                                          line-height:16px;
+                                          box-shadow:0px 0px 0px 2px rgba(0,0,0,.1);
+                                          border-radius:2px; }
+#SStableWrap .col-lg-1 list-group a.list-group-item:hover i	{ color:red; box-shadow:0px 0px 0px 3px rgba(0,0,0,.1); }
+#SStableWrap .col-lg-1 .list-group a.list-group-item i:hover	{ background:#000; box-shadow:0px 0px 0px 3px rgba(255,255,255,.4); color:#fff; }
+
+#SStableWrap .controllAll a	{ padding:3px 0px 3px 20px; border:0px; }*-/
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody	{ border:0px;}		
+div.DTS div.dataTables_scrollBody	{ background:none; }
+
+#tableRecDetails1	{ padding-bottom:5px; }		
+#tableRecDetails1 tr.parentrow	{ background-color:#eee; }*/
+
+/*------------------------------------New CSS------*/
+/*
+#SStableWrap .col-lg-1 .list-group i {
+    box-shadow:0px 0px 0px 2px rgba(0,0,0,.1);
+    border-radius:2px;
+}
+
+#SStableWrap .col-lg-1 list-group a.list-group-item:hover i	
+{ 
+   color:red;
+   box-shadow:0px 0px 0px 3px rgba(0,0,0,.1);
+}
+
+.list-group-item i.hide {
+display:none !important;
+}*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+body.modal-open, 
+.modal-open .navbar-fixed-top, 
+.modal-open .navbar-fixed-bottom {
+    margin-right: 15px;
+}

@@ -1,18 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+
+import { AppComponent } from './app.component'
+import { CommonComponentModule } from './components'
+import { RoutesModule } from './app.routes'
+import { RequestService, StoreService, OverrideService} from './services'
 
 
-import { AppComponent } from './app.component';
-
+let components = [
+  // RecommendationsComponent
+  AppComponent
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    ...components
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutesModule,
+    CommonComponentModule
   ],
-  providers: [],
+  providers: [
+    StoreService,
+    RequestService,
+    OverrideService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

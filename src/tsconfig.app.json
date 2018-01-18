@@ -4,8 +4,16 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": []
+    "types": [
+      "jquery",
+      "datatables.net"
+    ]
   },
+  "scripts": [
+    "../node_modules/jquery/dist/jquery.js",
+    "../node_modules/datatables.net/js/jquery.dataTables.js",
+    "../node_modules/datatables.net-scroller/js/dataTables.scroller.js"
+  ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts"

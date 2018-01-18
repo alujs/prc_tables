@@ -1,0 +1,21 @@
+<div class="col-lg-12 NoPadding">
+    <div class="">
+        <button id="saveRecDetails2" type="button" class="btn btn-warning btn-rad saveRecDetails col-lg-12"><i class="fa fa-save"></i>&nbsp;Save</button>
+    </div>
+</div>
+<div class="col-lg-12 NoPadding">
+    <div id="toggBtnThrTypeSx">
+        <div id="BtnGroupSx" class="btn-group btn-toggle">
+            <input id="NSwitch_5" type="button" (click)="hideAll($event)" [class]="(toggle ? '': 'active') + 'btn btn-rad switchbtnSx col-lg-6 btn-default center'" data-ut="UnitHide" value="Hide">
+            <input id="FSwitch_5" type="button" (click)="showAll($event)" [class]="(toggle ? 'active': '') + 'btn btn-rad switchbtnSx col-lg-6 btn-success center'" data-ut="UnitShow" value="Show">
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div id="UnitTypeScrollHelper" class="list-group list-group-root">
+      <a (click)="clickToJump($event, data.unitType)" *ngFor="let data of settingsBarData; index as i" [href]="('#item-' + i)" [class]="localState[data.unitType] ? 'list-group-item UT_List_Items filter-active' :'list-group-item UT_List_Items'">
+        <i (click)="clickToFilter($event, data.unitType)" [class]="localState[data.unitType] ? 'fa fa-angle-right' : 'fa fa-angle-down'" aria-hidden="true"></i>
+        <span> {{ data.unitType }} </span>
+      </a>
+    </div>
+</div>

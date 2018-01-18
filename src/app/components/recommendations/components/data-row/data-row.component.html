@@ -1,0 +1,22 @@
+  <td *ngFor="let column of processedData" [class]="column.class">
+    <input *ngIf="column.Stage && column.HierarchyLevel === 1" [name]="column.Stage" type="button" [class]="('Im ' + column.iconClass +' pull-right')" [value]="column.Stage.substring(0, 1)" />
+    <span *ngIf="column.Stage && column.HierarchyLevel !== 1" class="hide"> 
+      {{ column.Stage}} 
+    </span>
+
+    <div *ngIf="column.unitOver" class="center" >
+      <span name="OverrideValue" class="selectorU" (click)="activateManualOverride()">
+        {{ column.viewOverride }} 
+      </span>
+    </div>
+
+    <!-- <div *ngIf="column.unitOver && !column.nameAttr && column.value !== null" class="center" [attr.data-header]="column.dataHeaderAttr" [attr.name]="column.nameAttr">
+      <span class="pull-left" (click)="activateManualOverride()">
+        ---  NA  ---
+      </span>
+    </div> -->
+
+    {{ column.value }}
+    <input *ngIf="column.reject" [name]="column.rejName" type="button" [class]="column.rejActionName" (click)="createOverride()" />
+    <input *ngIf="column.accept" [name]="column.accName" type="button" [class]="column.accActionName" />
+  </td>

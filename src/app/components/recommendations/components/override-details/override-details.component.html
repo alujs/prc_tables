@@ -1,0 +1,98 @@
+<div id="EditUnitLevelOverRideDetails" *ngIf="modalStatus" [class]="modalStatus ? 'modal colored-header info in show' : 'modal colored-header info in'" tabindex="-1" role="dialog">
+  <div class="modal-dialog custom-width modal-front">
+      <div class="modal-content">
+          <div class="modal-header modalHeaderSmallPadding">
+              <h3>Override Details<span id="uOvrDetailsHdr"></span></h3>
+              <button (click)="closeModal()" type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body modalBodySmallPadding">
+              <div class="rowQuarterMargin">
+                  <div class="form-group">
+                      <div class="col-lg-3">
+                          <label class="pull-right">Current Rent:</label>
+                      </div>
+                      <div class="col-lg-2">
+                          <span id="uCurrRent"> ${{ currentModel.staging.CurrRent }} </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="rowQuarterMargin">
+                  <div class="form-group">
+                      <div class="col-lg-3">
+                          <label class="pull-right" data-tip="Recommended Rent">Rec Rent:</label>
+                      </div>
+                      <div class="col-lg-2">
+                          <span id="uRecRent"> ${{ currentModel.staging.RecRent }}</span>
+                      </div>
+                      <div class="col-lg-3">
+                          <label class="pull-right" data-tip="Expiration">Expires At:</label>
+                      </div>
+                      <div class="col-lg-2">
+                          <span id="uRecRent"> {{ currentModel.staging.Expiration }}</span>
+                      </div>
+                  </div>
+              </div>
+              <hr />
+              <form [formGroup]="overrideForm">
+                <div class="rowQuarterMargin">
+                    <div class="form-group">
+                        <div class="col-lg-3">
+                            <label  class="marginTop5px pull-right">Override Type<span class="text-danger">*</span>:</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <select formControlName="OverrideType" id="uddlUsrOvrTypes" class="filter-select">
+                              <option value="Total" [selected]="true">Total</option>
+                              <option value="Inc">Incremental</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-offset-3 col-lg-9"><span id="uOvrTypeKey" class="text-danger spanOvrErrorMsg"></span></div>
+                    </div>
+                </div>
+                <div class="rowQuarterMargin">
+                    <div class="form-group">
+                        <div class="col-lg-3">
+                            <label class="marginTop5px pull-right">Value<span class="text-danger">*</span>:</label>
+                        </div>
+                        <div class="col-lg-3 input-group ZeroMarginBottom" style="padding-left:15px !important;">
+                            <span class="input-group-addon select2FormControl">$</span>
+                            <input formControlName="Override" id="utxtOrigOvrValue" type="text" class="txt1-form-control select2FormControl" />
+                            <input id="utxtOrigOvrValueConfirmFlag" type="text" class="hide" value="0" />
+                        </div>
+                        <div class="col-lg-9 col-lg-offset-3">
+                          <span *ngIf="this.overrideForm.controls.Override.errors && this.overrideForm.controls.Override.errors.invalidNumber" id="uOrigOvrValue" class="text-danger spanOvrErrorMsg">
+                             {{ overrideForm.controls.Override.errors.invalidNumber.name }}
+                          </span>
+                          <span *ngIf="this.overrideForm.controls.Override.errors && this.overrideForm.controls.Override.errors.required" id="uOrigOvrValue" class="text-danger spanOvrErrorMsg">
+                              A valid number is required.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowQuarterMargin">
+                    <div class="form-group">
+                        <div class="col-lg-3">
+                            <label class="marginTop5px pull-right">Expiration<span id="uOvrExpDateRequired" class="text-danger">*</span>:</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <input formControlName="Expiration" id="uOvrExpDate" type="text" class="form-control select2FormControl ApplyDatePicker" />
+                        </div>
+                        <div class="col-lg-5">
+                          <span id="uEDate" *ngIf="this.overrideForm.controls.Expiration.errors && this.overrideForm.controls.Expiration.errors.invalidDate && !this.overrideForm.controls.Expiration.errors.required" class="text-danger spanOvrErrorMsg">
+                            {{ this.overrideForm.controls.Expiration.errors.invalidDate.name }}
+                          </span>
+                          <span id="uEDate" *ngIf="this.overrideForm.controls.Expiration.errors && this.overrideForm.controls.Expiration.errors.required" class="text-danger spanOvrErrorMsg">
+                              Expiration date is required.
+                          </span>
+                        </div>
+                    </div>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer modalFooterSmallPadding">
+              <button (click)="closeModal()" type="button" class="btn btn-rad btn-danger btn-flat md-close" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Cancel</button>
+              <button (click)="submit()" id="proceeedU" type="button" class="btn btn-rad btn-success btn-flat md-close" [disabled]="overrideForm.status === 'INVALID' ? true : false"><i class="fa fa-check"></i>&nbsp;Ok</button>
+          </div>
+      </div>
+  </div>
+  <div class="modal-backdrop" (click)="closeModal()"></div>
+</div>

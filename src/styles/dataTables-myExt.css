@@ -1,0 +1,249 @@
+﻿td.highlight {
+    font-weight: bold;
+    color: blue;
+}
+
+tr.even{
+    background-color: white !important;
+}
+
+
+tr.odd{
+    background-color: white !important;
+}
+
+tr.parentrow{
+    background-color: #eee !important;
+}
+
+.disabledAcceptAction, .disabledAcceptActionC4, .UnitLevel_DisabledAcceptAction {
+    background-image: url(../images/AcceptAvail.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .disabledAcceptAction:hover, .disabledAcceptActionC4:hover, .UnitLevel_DisabledAcceptAction:hover {
+        cursor: pointer;
+    }
+
+.acceptAction, .UnitLevel_AcceptAction {
+    background-image: url(../images/AcceptSelected.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .acceptAction:hover, .UnitLevel_AcceptAction:hover {
+        cursor: pointer;
+    }
+
+.rejectAction, .UnitLevel_RejectAction {
+    background-image: url(../images/RejectSelected.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .rejectAction:hover, .UnitLevel_RejectAction:hover {
+        cursor: pointer;
+    }
+
+.disabledRejectAction, .UnitLevel_DisabledRejectAction {
+    background-image: url(../images/RejectAvail.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .disabledRejectAction:hover, .UnitLevel_DisabledRejectAction:hover {
+        cursor: pointer;
+    }
+
+.notesAction {
+    /* background-image: url(../images/NotesAvail.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .notesAction:hover {
+        cursor: pointer;
+    }
+
+.disabledNotesAction {
+    /* background-image: url(../images/NotesDisabled.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .disabledNotesAction:hover {
+        cursor: pointer;
+    }
+
+.watchAction {
+    /* background-image: url(../images/eye42.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .watchAction:hover {
+        cursor: pointer;
+    }
+
+.unWatchAction {
+    /* background-image: url(../images/eye41.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .unWatchAction:hover {
+        cursor: pointer;
+    }
+
+.detailsAction {
+    /* background-image: url(../images/detailsAvail.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .detailsAction:hover {
+        cursor: pointer;
+    }
+
+.OvrAction {
+    background-image: url(../images/AcceptSelected.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    float: right;
+}
+    .OvrAction:hover {
+        cursor: pointer;
+    }
+
+.boundAction {
+    /* background-image: url(../images/BoundAvail.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    float: right;
+}
+    .boundAction:hover {
+        cursor: default;
+    }
+
+.boundAction1 {
+    /* background-image: url(../images/BoundAvail.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 5px;
+    height: 15px;
+    float: left;
+}
+    .boundAction1:hover {
+        cursor: default;
+    }
+
+/*----------------------Amenity--Tab-2/3----Start--------------------------*/
+.disabledAcceptAction2, .disabledAcceptAction3, .disabledAcceptAction4 {
+    background-image: url(../images/AcceptAvail.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+    .disabledAcceptAction2:hover, .disabledAcceptAction3:hover, .disabledAcceptAction4:hover {
+        cursor: default;
+    }
+
+.acceptAction2, .acceptAction3, .acceptAction4, .acceptActionC4 {
+    background-image: url(../images/AcceptSelected.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .acceptAction2:hover, .acceptAction3:hover, .acceptAction4:hover, .acceptActionC4:hover {
+        cursor: pointer;
+    }
+.rejectAction2, .rejectAction3, .rejectAction4, .rejectActionC4, .rejectActionC3U, .rejectActionC3L {
+    background-image: url(../images/RejectSelected.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .rejectAction2:hover, .rejectAction3:hover, .rejectAction4:hover, .rejectAction5:hover, .rejectAction6:hover, .rejectActionC4:hover, .rejectActionC3L:hover, .rejectActionC3U:hover {
+        cursor: pointer;
+    }
+
+
+.disabledRejectAction2, .disabledRejectAction3, .disabledRejectAction4, .disabledRejectActionC4 {
+    background-image: url(../images/RejectAvail.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+}
+    .disabledRejectAction2:hover, .disabledRejectAction3:hover, .disabledRejectAction4:hover, .disabledRejectActionC4:hover {
+        cursor: default;
+    }
+
+.selectorC41:hover, .selector71:hover, .selector72:hover, .selector6:hover, .selector5:hover, .selector4:hover, .selector3:hover {
+    cursor: pointer;
+}
+/*---------------Amenity Tab 8----------*/
+.detailsAction1 {
+    /* background-image: url(../images/detailsAvail.jpg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+    .detailsAction1:hover {
+        cursor: pointer;
+    }
